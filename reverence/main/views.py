@@ -40,7 +40,7 @@ class CatalogView(ListView):
         context['min_price'] = self.request.GET.get('min_price', '')
         context['max_price'] = self.request.GET.get('max_price', '')
 
-        return complex
+        return context
 
 class ClothingItemDetailView(DetailView):
     model = ClothingItem
